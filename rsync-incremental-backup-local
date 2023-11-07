@@ -19,7 +19,7 @@ ownFolderName="${ownFolderName:-.rsync-incremental-backup}"
 logFolderName="${logFolderName:-log}"
 additionalFlags="${additionalFlags:-}"
 maxLogFiles="${maxLogFiles:-20}"
-useChecksum="${useChecksum:-1}"
+useChecksum="${useChecksum:-0}"
 
 # Combinate previously defined variables for use (don't touch this)
 ownFolderPath="${HOME}/${ownFolderName}"

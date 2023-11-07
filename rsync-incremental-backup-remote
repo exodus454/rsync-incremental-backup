@@ -6,7 +6,7 @@
 src="${1:-/path/to/source}"
 dst="${2:-/path/to/target}"
 remote="${3:-ssh_remote}"
-backupDepth=${backupDepth:-7}
+backupDepth=${backupDepth:-30}
 timeout=${timeout:-1800}
 pathBak0="${pathBak0:-data}"
 partialFolderName="${partialFolderName:-.rsync-partial}"

@@ -17,7 +17,7 @@ logDateCmd="${logDateCmd:-printf %(%FT%T%z)T}"
 logName="${logName:-rsync-incremental-backup_$(printf '%(%F)T')_$(printf '%(%H-%M-%S)T').log}"
 ownFolderName="${ownFolderName:-.rsync-incremental-backup}"
 logFolderName="${logFolderName:-log}"
-additionalFlags="${additionalFlags:-}"
+additionalFlags="${additionalFlags:--H --numeric-ids }"
 maxLogFiles="${maxLogFiles:-20}"
 useChecksum="${useChecksum:-0}"
 
